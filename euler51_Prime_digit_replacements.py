@@ -21,7 +21,7 @@ def e51():
     we would exactly get 3 numbers divisible by 3,
     because we increase the sum of digits in the number
     Consequently we can not get 8 primes this way.
-    Let's check 3-digit replacing!
+    Let's check 3-digit replacing
     """
 
     n = 56993
