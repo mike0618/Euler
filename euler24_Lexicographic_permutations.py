@@ -1,4 +1,3 @@
-
 # Lexicographic permutations
 import time
 import itertools
@@ -13,7 +12,6 @@ def e24():
         cnt += 1
         if cnt == 1000000:
             p = str(p).strip("('')").replace("', '", "")
-            print(type(p))
             return p
 
 

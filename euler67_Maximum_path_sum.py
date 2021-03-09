@@ -5,7 +5,7 @@ start = time()
 
 
 def e67():
-    with open("100_triangle.txt") as f:
+    with open("p067_triangle.txt") as f:
         summ = []
         for s in f:
             slst = s.split()

@@ -16,9 +16,7 @@ def e25(n):
         if ff > maxd:
             break
     if f > maxd:
-        print(f)
         return cnt
-    print(ff)
     return cnt + 1
 
 

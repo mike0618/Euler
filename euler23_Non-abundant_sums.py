@@ -34,32 +34,5 @@ def e23():
 
 
 print(e23())  # 4179871
-
-
-# numbers = []
-# excess_numbers = []
-# sum_excess_numbers = []
-#
-# for i in tqdm(range(1, 28124)):
-#     sum_of_divider = 0
-#     numbers.append(i)
-#     for j in range(1, int(i / 2) + 1):
-#         if i % j == 0:
-#             sum_of_divider += j
-#             if sum_of_divider > i:
-#                 excess_numbers.append(i)
-#                 break
-#
-# for i in tqdm(range(len(excess_numbers))):
-#     for j in range(i + 1):
-#         sum_excess_numbers.append(excess_numbers[i] + excess_numbers[j])
-#
-# numbers = set(numbers)
-# sum_excess_numbers = set(sum_excess_numbers)
-# numbers.difference_update(sum_excess_numbers)
-#
-# print(sum(numbers))
-
-
 end = time.time() - start
 print("Runtime =", end)

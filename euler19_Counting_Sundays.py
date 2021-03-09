@@ -1,5 +1,5 @@
 # Counting Sundays
-import time
+from time import time
 
 
 def e19():
@@ -7,7 +7,7 @@ def e19():
     mstart = int(input("Enter the start month 1-12: "))
     yend = int(input("Enter the last year equals start or more: "))
     mend = int(input("Enter the last month 1-12: "))
-    start = time.time()
+    start = time()
     months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     days = 0
     for y in range(1900, ystart + 1):
@@ -41,9 +41,8 @@ def e19():
                     sundays += 1
                 wd = (wd + m) % 7
 
-    end = time.time() - start
     print(f"There are {sundays} sundays fell on the 1st of the month during your period of time")
-    print("Runtime =", end)
+    print('Runtime =', time() - start)
 
 
-e19()  # 171
+e19()  # 171 (from 01/1901 to 12/2000)

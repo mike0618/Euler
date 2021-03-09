@@ -1,5 +1,10 @@
 # The largest prime factor
-def largestprime(n):
+from time import time
+
+start = time()
+
+
+def e3(n):
     d = 2
     while d * d <= n:
         if n % d == 0:
@@ -8,8 +13,8 @@ def largestprime(n):
             d += 1
         else:
             d += 2
-    if n > 1:
-        return n
+    return n
 
 
-print(largestprime(600851475143))
+print(e3(600851475143))  # 6857
+print('Runtime:', time() - start)
