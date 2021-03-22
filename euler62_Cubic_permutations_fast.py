@@ -6,7 +6,7 @@ start = time()
 
 def e62(n):
     d = {}
-    i = 0
+    i = 405
     while True:
         i += 1
         cube = i ** 3
