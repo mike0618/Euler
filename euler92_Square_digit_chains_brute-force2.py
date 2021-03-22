@@ -11,9 +11,9 @@ def flight(s):
 
 def e92():
     nums89 = {89}
-    nums1 = {1}
-    for n in tqdm(range(2, 568)):
-        if n in nums1 or n in nums89:
+    maxsum = 7 * 9 ** 2 + 1
+    for n in range(2, maxsum):
+        if n in nums89:
             continue
         nums = {n}
         while True:
@@ -21,8 +21,7 @@ def e92():
             if num in nums89:
                 nums89.update(nums)
                 break
-            elif num in nums1:
-                nums1.update(nums)
+            elif num == 1:
                 break
             else:
                 n = num
@@ -30,7 +29,7 @@ def e92():
 
     cnt = len(nums89)
 
-    for n in tqdm(range(568, 10000000)):
+    for n in tqdm(range(maxsum, 10000000)):
         num = flight(str(n))
         if num in nums89:
             cnt += 1
