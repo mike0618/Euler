@@ -5,7 +5,7 @@ start = time()
 
 
 def e62(n):
-    d = dict()
+    d = {}
     i = 0
     while True:
         i += 1
@@ -13,7 +13,6 @@ def e62(n):
         value = ''.join(sorted(str(cube)))
         d[value] = d.get(value, []) + [cube]
         if len(d[value]) == n:
-            # print(d)
             return min(d[value])
 
 
