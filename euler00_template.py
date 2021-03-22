@@ -8,5 +8,6 @@ def e():
     pass
 
 
-print(e())  #
-print('Runtime =', time() - start)
+if __name__ == "__main__":
+    print(e())  #
+    print('Runtime =', time() - start)
